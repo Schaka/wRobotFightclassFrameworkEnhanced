@@ -261,6 +261,9 @@ namespace CombatRotation.RotationFramework
 
 		public static void SetFocusGuid(ulong guid)
 		{
+			RotationFramework.Me.FocusGuid = guid;
+			return;
+			
 			switch (Usefuls.WowVersion)
 			{
 				case 5875:
